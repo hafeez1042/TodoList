@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.6.0",
+    "libraryName": "react-redux-wp",
+    "libraryId": "50176e93-c395-44b0-9142-f377c61ec286",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
