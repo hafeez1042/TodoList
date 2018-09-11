@@ -8,8 +8,8 @@ import {
 } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'TodoListWebPartStrings';
-import TodoList from './components/TodoList';
-import { ITodoListProps } from './components/ITodoListProps';
+
+import App, { IAppProps } from "./App";
 
 export interface ITodoListWebPartProps {
   description: string;
@@ -18,10 +18,9 @@ export interface ITodoListWebPartProps {
 export default class TodoListWebPart extends BaseClientSideWebPart<ITodoListWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<ITodoListProps > = React.createElement(
-      TodoList,
+    const element: React.ReactElement<IAppProps> = React.createElement(
+      App,
       {
-        description: this.properties.description
       }
     );
 
