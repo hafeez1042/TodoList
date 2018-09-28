@@ -1,9 +1,12 @@
 import { ITodosReducer } from "../../reducers/todosReducer";
+import { addTodo, updateTodo, getTodos } from "../../actions/todoActions";
 
 export interface ITodoProps {}
 export interface ITodoStateProps {
   todo: ITodosReducer;
 }
 export interface ITodoDispatchProps {
-  addTodo: (todo: string) => void;
+  addTodo: typeof addTodo;
+  updateTodo: typeof updateTodo;
+  getTodos: typeof getTodos;
 }

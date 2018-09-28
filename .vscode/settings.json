@@ -1,6 +1,8 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   // Configure glob patterns for excluding files and folders in the file explorer.
+  "editor.fontSize": 24,
+  "editor.lineHeight": 34,
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
